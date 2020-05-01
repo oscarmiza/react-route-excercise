@@ -1,0 +1,9 @@
+.HEADER_navbar  ul {
+    list-style: none;
+    display: flex;
+    color: blue;
+    justify-content: space-between ;
+    margin: 2em 2em;
+    padding: 0;
+}
+
