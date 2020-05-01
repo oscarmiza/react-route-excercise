@@ -25,7 +25,7 @@ class AllPost extends React.Component {
     render() {
         return (
             <>
-                <div className=" border-left">
+                <div className="">
                     <h2 className="ml-3 text-center">This is your list of Post</h2>
                     {this.state.data && this.state.data.map(item =>
                         <>

@@ -43,7 +43,7 @@ class SinglePost extends React.Component {
 
                     </div>
                 </div>
-                <div className=" border-left">
+                <div className="d-flex justify-content-center flex-column">
                     <h2 className="ml-3 text-center">This is my filtered list of Post</h2>
                     {this.state.data && this.state.data.map(item =>
                         <>
