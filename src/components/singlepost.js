@@ -15,12 +15,9 @@ class SinglePost extends React.Component {
         axios.get('https://jsonplaceholder.typicode.com/posts')
             .then(function (response) {
                 // handle success
-
                 self.setState({
                     data: response.data.filter(self.search),
                 })
-                console.log(response.data);
-
             })
             
     }
@@ -46,9 +43,8 @@ class SinglePost extends React.Component {
 
                     </div>
                 </div>
-
                 <div className=" border-left">
-                    <h2 className="ml-3">This is my filtered list of Post</h2>
+                    <h2 className="ml-3 text-center">This is my filtered list of Post</h2>
                     {this.state.data && this.state.data.map(item =>
                         <>
                             <Post key={item.id} id={item.id} title={item.title} body={item.body} userId={item.userId} />
